@@ -1,6 +1,5 @@
 ---
-- hosts: localhost
-  connection: local
-  remote_user: root
+- hosts: bastion
+  gather_facts: false
   roles:
     - ssato.opentlc_workstation
