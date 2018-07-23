@@ -1,5 +1,6 @@
 - include: ssh_init.yml
 - include: packages.yml
+- include: bash.yml
 - include: tmux.yml
 
 # vim:sw=2:ts=2:et:

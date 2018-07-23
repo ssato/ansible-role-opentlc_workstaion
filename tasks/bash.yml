@@ -1,0 +1,10 @@
+- name: Add GUID and locale configuraiton to ~/.bashrc
+  blockinfile:
+    path: ~/.bashrc
+    backup: yes
+    insertafter: EOF
+    block: |
+      export GUID=$(hostname | cut -d. -f2)
+      export LANG=en_US.UTF-8
+
+# vim:sw=2:ts=2:et:
