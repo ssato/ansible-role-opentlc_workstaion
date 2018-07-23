@@ -23,8 +23,11 @@ Dependencies
 
 - Apparently, bastion host provided by OpenTLC is needed.
 
-Example Playbook
-==================
+Examples
+==========
+
+- inventory file: see tests/inventory
+- playbook:
 
 ::
 
