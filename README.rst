@@ -32,6 +32,7 @@ Examples
 ::
 
   - hosts: bastion
+    gather_facts: false
     vars:
       # These are MUST.
       opentlc_username: foo-example.com
