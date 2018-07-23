@@ -23,6 +23,12 @@ Dependencies
 
 - Apparently, bastion host provided by OpenTLC is needed.
 
+Preparation
+-------------
+
+Your ssh public key must be provided to the OpenTLC authentication system in
+advance.
+
 Examples
 ==========
 
