@@ -1,4 +1,5 @@
 - name: Copy SSH key
+  delegate_to: localhost
   expect:
     command: ssh-copy-id {{ '-i %s' % opentlc_ssh_identity_file if opentlc_ssh_identity_file }} {{ opentlc_username }}@{{ opentlc_bastion_short_hostname }}.{{ opentlc_guid }}.{{ opentlc_domain|default('example.opentlc.com') }}
     responses:
