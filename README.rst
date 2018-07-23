@@ -5,7 +5,7 @@ ssato.opentlc_workstation
 ssato.opentlc_workstation is an ansible role to setup workstaion used to be
 named as bastion host in environments provided by OpenTLC [#]_.
 
-.. image:: https://img.shields.io/travis/ssato/ansible-role-opentlc_workstation
+.. image:: https://img.shields.io/travis/ssato/ansible-role-opentlc_workstation.png
    :target: https://travis-ci.org/ssato/ansible-role-opentlc_workstation
    :alt: [Test status]
 
