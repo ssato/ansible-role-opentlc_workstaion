@@ -40,7 +40,7 @@ MIT
 Author
 ==========
 
-Satoru SATOH [ssato@Github](https://github.com/ssato)
+Satoru SATOH `ssato@Github <https://github.com/ssato>`_
 
 .. [#] https://labs.opentlc.com
 
