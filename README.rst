@@ -38,7 +38,7 @@ Example Playbook
       # These are optional
       # opentlc_ssh_identity_file: /home/foo/id_rsa_opentlc
       # opentlc_domain: example.opentlc.com
-      # install_packages:
+      # opentlc_bastion_install_packages:
       #   - zsh
       #   - tmux
       #   - ansible
