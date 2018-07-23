@@ -1,11 +1,19 @@
-- name: Ping bastion
-  ping:
+#- name: Ping bastion
+#  ping:
+
+- name: Check if SSH connection was made in the past
+  delegate_to: localhost
+  command: "grep -q {{ inventory_hostname }} ~/.ssh/known_hosts"
+  register: found_in_known_host
+  ignore_errors: true
 
 - name: Copy SSH public key
   delegate_to: localhost
   expect:
     command: ssh-copy-id {{ '-i %s' % opentlc_ssh_identity_file if opentlc_ssh_identity_file is defined else '' }} {{ ansible_user}}@{{ opentlc_bastion_short_hostname|default(inventory_hostname_short) }}.{{ opentlc_guid }}.{{ opentlc_domain|default('example.opentlc.com') }}
     responses:
-      ' connecting (yes/no)? ': 'yes'
+      ' connecting \(yes/no\)\? ': "yes\n"
+  when:
+    - found_in_known_host.rc != 0
 
 # vim:sw=2:ts=2:et:
