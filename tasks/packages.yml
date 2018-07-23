@@ -1,0 +1,7 @@
+- name: Install packages
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ install_packages }}"
+
+# vim:sw=2:ts=2:et:

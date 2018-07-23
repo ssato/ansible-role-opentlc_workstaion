@@ -1,0 +1,7 @@
+- name: Copy SSH key
+  expect:
+    command: ssh-copy-id {{ '-i %s' % opentlc_ssh_identity_file if opentlc_ssh_identity_file }} {{ opentlc_username }}@{{ opentlc_bastion_short_hostname }}.{{ opentlc_guid }}.{{ opentlc_domain|default('example.opentlc.com') }}
+    responses:
+      ' connecting (yes/no)? ': yes
+
+# vim:sw=2:ts=2:et:
