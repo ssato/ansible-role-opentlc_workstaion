@@ -1,11 +1,11 @@
 - name: Ensure tmux loggging dir is present
   file:
-    path: "{{ ansible_env.HOME }}/.tmux"
+    path: ~/.tmux
     state: directory
 
 - name: Setup tmux.conf
   template:
     src: tmux.conf.j2
-    dest: "{{ ansible_env.HOME }}/.tmux.conf"
+    dest: ~/.tmux.conf
 
 # vim:sw=2:ts=2:et:
