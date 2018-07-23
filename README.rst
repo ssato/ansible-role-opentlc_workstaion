@@ -53,7 +53,7 @@ Examples
       #   - tmux
       #   - ansible
     roles:
-      - role: ssato.opentlc_workstation
+      - ssato.opentlc_workstation
 
 License
 ===========
