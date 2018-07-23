@@ -32,11 +32,11 @@ Example Playbook
     vars:
       # These are MUST.
       opentlc_username: foo-example.com
-      opentlc_bastion_short_hostname: bastion
       opentlc_guid: xyz0
 
       # These are optional
       # opentlc_ssh_identity_file: /home/foo/id_rsa_opentlc
+      # opentlc_bastion_short_hostname: bastion
       # opentlc_domain: example.opentlc.com
       # opentlc_bastion_install_packages:
       #   - zsh
